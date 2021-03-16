@@ -10085,9 +10085,9 @@ body {
 }
 .box01 input{
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     outline: none;
-    width:250px;
+    width:350px;
     text-align: center;
 }
 .box01 button{
