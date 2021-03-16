@@ -508,6 +508,19 @@ mark,
     margin-right: 5px;
 }
 
+.contact-icon-lg {
+    width: 30px;
+    height: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 1px;
+    margin-right: 1px;
+}
 .figure {
     display: inline-block;
 }
