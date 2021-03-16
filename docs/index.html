@@ -26,7 +26,17 @@
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
     <script type="text/javascript">
+        function copy_to_clipboard() {    
+  var copyText = document.getElementById('myInput');
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("Copy");
+  alert('복사되었습니다.');
+}
+
+
         function sendMail() {
+
 
             (function () {
                 emailjs.init("user_yjLL5xG0A3kkOCH5BGIDh");
@@ -85,6 +95,7 @@
 
 
 
+
     </script>
 </head>
 
@@ -122,6 +133,8 @@
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#couple">Couple</a></li>
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#map">Map</a></li>
                             </ul>
                         </div>
                     </div>
@@ -245,6 +258,40 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ww-section" id="contact">
+                <div class="container">
+                    <h2 class="h1 text-center pb-3 ww-title" style="font-family:Bazzi, 'Noto Serif KR', serif;">Contact
+                    </h2>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            김이배
+                        </div>
+                        <div class="col-md-6">
+                            <h4 style="font-family: Bazzi, 'Noto Serif KR', serif; color: black;">
+                            김종민 010-6268-1904 <a href='tel:010-6268-1904'>전화하기</a><br>
+                            </h4>
+                            <a href="http://qr.kakao.com/talk/O9ymF9PYyk24DPJPn5L0UmLXxMA-">
+                                <img alt="naver-map" class="map-icon" id="naver-map" src="images/talk.jpg" />
+                            </a>
+                            <a href="https://qr.kakaopay.com/281006011000002365172738">
+                                <img alt="naver-map" class="map-icon" id="naver-map" src="images/pay.jpg" />
+                            </a>
+                            <p class="box01">
+                                <input id="myInput" value="하나은행 22889039759707" readonly style="font-family: Bazzi, 'Noto Serif KR', serif; color: black;">
+                                
+                                <button onclick="copy_to_clipboard()" style="font-family: Bazzi, 'Noto Serif KR', serif; color: black;">복사 하기</button>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            전기호
+                        </div>
+                        <div class="col-md-6">
+                            전희정
+                        </div>
+
                     </div>
                 </div>
             </div>
