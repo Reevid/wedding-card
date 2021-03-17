@@ -34,7 +34,13 @@
             document.execCommand("Copy");
             alert('복사되었습니다.');
         }
-
+        function copy_to_clipboard1() {
+            var copyText = document.getElementById('myInput1');
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("Copy");
+            alert('복사되었습니다.');
+        }
 
         function sendMail() {
 
@@ -480,9 +486,9 @@
                         <label style="font-family: Bazzi, 'Noto Serif KR', serif; font-size: 15px;">
                             신부측 계좌 번호<br>
                             <p class="box01">
-                                <input id="myInput" value="기업은행 63602057301029 전희정" readonly
+                                <input id="myInput1" value="기업은행 63602057301029 전희정" readonly
                                     style="font-family: Bazzi, 'Noto Serif KR', serif; color: black;">
-                                <button onclick="copy_to_clipboard()"
+                                <button onclick="copy_to_clipboard1()"
                                     style="font-family: Bazzi, 'Noto Serif KR', serif; color: black;">복사 하기</button>
 
                                 <a href="https://qr.kakaopay.com/281006011135693001009447">
@@ -492,7 +498,7 @@
                 </div>
             </div>
         </div>
-        <div class="">
+        <!-- <div class="">
             <div class="container">
                 <div class="col text-center"></div>
                 <div id="disqus_thread"></div>
@@ -516,7 +522,7 @@
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
                         powered by Disqus.</a></noscript>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     </div>
@@ -530,7 +536,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/ekko-lightbox.min.js"></script>
     <script src="scripts/main.js"></script>
-    <script id="dsq-count-scr" src="//wedding-u973zielbj.disqus.com/count.js" async></script>
+    <!-- <script id="dsq-count-scr" src="//wedding-u973zielbj.disqus.com/count.js" async></script> -->
 
 
     <div class="bottom_right"><i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
